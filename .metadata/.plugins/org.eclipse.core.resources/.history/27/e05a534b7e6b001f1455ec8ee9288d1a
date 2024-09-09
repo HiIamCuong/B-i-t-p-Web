@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<title>Page Title</title>
+</head>
+<body>
+	
+<form action="/testmaven/home" method="post" accept-charset="UTF-8">
+ Tên: <input type="text" name="ten" > <br />
+ Họ lót: <input type="text" name="holot" />
+ <input type="submit" value="Submit" />
+ </form>
+
+</body>
+</html>
