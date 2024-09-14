@@ -14,6 +14,10 @@ public class User implements Serializable{
 	private String phone;
 	private Date createdDate;
 	
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	public User(int id, String email, String username, String fullname, String password, String avatar, int roleid,
 			String phone, Date createdDate) {
 		super();
@@ -27,11 +31,8 @@ public class User implements Serializable{
 		this.phone = phone;
 		this.createdDate = createdDate;
 	}
-	public User()
-	{
-		
-	}
 	
+
 	public int getId() {
 		return id;
 	}

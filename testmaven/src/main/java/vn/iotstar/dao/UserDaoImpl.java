@@ -124,4 +124,21 @@ public class UserDaoImpl implements UserDao{
 		catch (Exception ex) {}
 		return duplicate;
 	}
+	@Override
+	public void modified(String username, String password) {
+		String query="UPDATE nguoidung SET pass = ? WHERE username = ?";
+		try
+		{
+			conn=new DBconnectSQL().getConnection();
+			ps=conn.prepareStatement(query);
+			ps.setString(1, password);
+			ps.setString(2, username);
+			rs=ps.executeQuery();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	
 }

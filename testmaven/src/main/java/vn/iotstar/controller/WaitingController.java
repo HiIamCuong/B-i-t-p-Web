@@ -36,15 +36,15 @@ public class WaitingController extends HttpServlet {
 			req.setAttribute("username", u.getUsername());
 			if(u.getRoleid()==1) 
 			{
-				resp.sendRedirect(req.getContextPath()+"/views/done.jsp");
+				resp.sendRedirect(req.getContextPath()+"/views/admin/home.jsp");
 			}
 			else if(u.getRoleid()==2) 
 			{
-				resp.sendRedirect(req.getContextPath()+"/views/done.jsp");
+				resp.sendRedirect(req.getContextPath()+"/views/manager/home.jsp");
 			}
 			else 
 			{
-				resp.sendRedirect(req.getContextPath()+"/views/done.jsp");
+				resp.sendRedirect(req.getContextPath()+"/views/home.jsp");
 			}
 		}
 		else 

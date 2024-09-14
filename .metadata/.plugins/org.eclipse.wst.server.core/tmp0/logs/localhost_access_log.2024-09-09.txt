@@ -288,3 +288,13 @@
 0:0:0:0:0:0:0:1 - - [09/Sep/2024:16:05:33 +0700] "GET /testmaven/views/login.jsp HTTP/1.1" 200 833
 0:0:0:0:0:0:0:1 - - [09/Sep/2024:16:06:52 +0700] "GET /testmaven/views/login.jsp HTTP/1.1" 200 827
 0:0:0:0:0:0:0:1 - - [09/Sep/2024:16:07:50 +0700] "GET /testmaven/views/register.jsp HTTP/1.1" 200 1130
+127.0.0.1 - - [09/Sep/2024:18:10:46 +0700] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [09/Sep/2024:18:10:47 +0700] "GET /testmaven/views/topbar.jsp HTTP/1.1" 200 812
+0:0:0:0:0:0:0:1 - - [09/Sep/2024:18:10:47 +0700] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [09/Sep/2024:18:10:49 +0700] "GET /testmaven/register HTTP/1.1" 200 1130
+0:0:0:0:0:0:0:1 - - [09/Sep/2024:18:11:51 +0700] "GET /testmaven/register HTTP/1.1" 200 1130
+0:0:0:0:0:0:0:1 - - [09/Sep/2024:18:12:18 +0700] "POST /testmaven/register HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Sep/2024:18:12:18 +0700] "GET /testmaven/login HTTP/1.1" 200 827
+0:0:0:0:0:0:0:1 - - [09/Sep/2024:18:12:32 +0700] "POST /testmaven/login HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Sep/2024:18:12:32 +0700] "GET /testmaven/waiting HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [09/Sep/2024:18:12:32 +0700] "GET /testmaven/views/done.jsp HTTP/1.1" 200 155

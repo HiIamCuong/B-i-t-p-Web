@@ -39,4 +39,24 @@
     <servlet-name>RegisterController</servlet-name>
     <url-pattern>/RegisterController</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LogoutController</display-name>
+    <servlet-name>LogoutController</servlet-name>
+    <servlet-class>vn.iotstar.controller.LogoutController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutController</servlet-name>
+    <url-pattern>/LogoutController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ForgotController</display-name>
+    <servlet-name>ForgotController</servlet-name>
+    <servlet-class>vn.iotstar.controller.ForgotController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ForgotController</servlet-name>
+    <url-pattern>/ForgotController</url-pattern>
+  </servlet-mapping>
 </web-app>

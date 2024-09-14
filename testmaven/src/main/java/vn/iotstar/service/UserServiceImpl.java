@@ -15,7 +15,7 @@ public class UserServiceImpl implements UserService {
 		}
 		return null;
 	}
-
+	@Override
 	public User findByUserName(String username) {
 		return userDAO.get(username);
 	}
@@ -44,7 +44,7 @@ public class UserServiceImpl implements UserService {
 		}
 		long millis = System.currentTimeMillis();
 		java.sql.Date date = new java.sql.Date(millis);
-		userDAO.insert(new User(0, email, username, fullname, password, null, 1, phone, date));
+		userDAO.insert(new User(0,email, username, fullname, password, null, 1, phone, date));
 		return true;
 
 	}
@@ -62,5 +62,19 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public boolean checkExistPhone(String phone) {
 		return userDAO.checkExistPhone(phone);
+	}
+	@Override
+	public User forgotpassword(String username, String password) {
+		User user=this.findByUserName(username);
+		if(user!=null)
+		{
+			this.modified(username, password);
+			return user;
+		}
+		return null;
+	}
+	@Override
+	public void modified(String username, String password) {
+		userDAO.modified(username, password);
 	}
 }

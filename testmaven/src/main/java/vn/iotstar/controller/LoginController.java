@@ -11,6 +11,7 @@ import jakarta.servlet.http.HttpSession;
 import vn.iotstar.models.User;
 import vn.iotstar.service.UserService;
 import vn.iotstar.service.UserServiceImpl;
+import vn.iotstar.ultis.Constant;
 
 //@SuppressWarnings("serial")
 @WebServlet(urlPatterns = "/login")
@@ -86,10 +87,9 @@ public class LoginController extends HttpServlet{
 	}
 	private void saveRememberMe(HttpServletResponse response,String username)
 	{
-		Cookie cookie=new Cookie(COOKIE_REMEMBER,username);
+		Cookie cookie=new Cookie(Constant.COOKIE_REMEMBER,username);
 		cookie.setMaxAge(30*60);
 		response.addCookie(cookie);
 	}
-	public static final String SESSION_USERNAME = "username";
-	public static final String COOKIE_REMEMBER = "username";
+	
 }
