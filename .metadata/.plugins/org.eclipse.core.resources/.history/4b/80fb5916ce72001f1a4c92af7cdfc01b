@@ -41,7 +41,7 @@ public class LogoutController extends HttpServlet {
 	                resp.addCookie(c);
 	            }
 	        }
-		resp.sendRedirect("views/topbar.jsp");
+		resp.sendRedirect("login");
 	}
 
 	/**
