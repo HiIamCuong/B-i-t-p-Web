@@ -1,0 +1,1809 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="jakarta.tags.core"%>
+<%@ page language="java"%>
+<!DOCTYPE html>
+<html lang="en" id="ls-global">
+<!--<![endif]-->
+<!-- Head BEGIN -->
+<head>
+<meta charset="utf-8">
+<title>Metronic Shop UI</title>
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta content="Metronic Shop UI description" name="description">
+<meta content="Metronic Shop UI keywords" name="keywords">
+<meta content="keenthemes" name="author">
+
+<meta property="og:site_name" content="-CUSTOMER VALUE-">
+<meta property="og:title" content="-CUSTOMER VALUE-">
+<meta property="og:description" content="-CUSTOMER VALUE-">
+<meta property="og:type" content="website">
+<meta property="og:image" content="-CUSTOMER VALUE-">
+<!-- link to image for socio -->
+<meta property="og:url" content="-CUSTOMER VALUE-">
+
+<link rel="shortcut icon" href="favicon.ico">
+
+<!-- Fonts START -->
+<link
+	href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all"
+	rel="stylesheet" type="text/css">
+<link
+	href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all"
+	rel="stylesheet" type="text/css">
+<!--- fonts for slider on the index page -->
+<!-- Fonts END -->
+
+<!-- Global styles START -->
+<link
+	href="../testmaven/assets/global/plugins/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet">
+<link href="../testmaven/assets/global/plugins/bootstrap/css/bootstrap.min.css"
+	rel="stylesheet">
+<!-- Global styles END -->
+
+<!-- Page level plugin styles START -->
+<link
+	href="../testmaven/assets/global/plugins/fancybox/source/jquery.fancybox.css"
+	rel="stylesheet">
+<link
+	href="../testmaven/assets/global/plugins/carousel-owl-carousel/owl-carousel/owl.carousel.css"
+	rel="stylesheet">
+<link
+	href="../testmaven/assets/global/plugins/slider-layer-slider/css/layerslider.css"
+	rel="stylesheet">
+<!-- Page level plugin styles END -->
+
+<!-- Theme styles START -->
+<link href="../testmaven/assets/global/css/components.css" rel="stylesheet">
+<link href="../testmaven/assets/frontend/layout/css/style.css" rel="stylesheet">
+<link href="../testmaven/assets/frontend/pages/css/style-shop.css"
+	rel="stylesheet" type="text/css">
+<link href="../testmaven/assets/frontend/pages/css/style-layer-slider.css"
+	rel="stylesheet">
+<link href="../testmaven/assets/frontend/layout/css/style-responsive.css"
+	rel="stylesheet">
+<link href="../testmaven/assets/frontend/layout/css/themes/red.css"
+	rel="stylesheet" id="style-color">
+<link href="../testmaven/assets/frontend/layout/css/custom.css"
+	rel="stylesheet">
+<!-- Theme styles END -->
+<link rel="stylesheet"
+	href="../testmaven/assets/global/plugins/slider-layer-slider/skins/fullwidth/skin.css"
+	type="text/css">
+<script charset="utf-8"
+	src="https://platform.twitter.com/js/timeline.e108540dddc96e4b707f5cf259a582d7.js"></script>
+</head>
+<!-- Head END -->
+
+<!-- Body BEGIN -->
+<body class="ecommerce">
+	<!-- BEGIN STYLE CUSTOMIZER -->
+	<div class="color-panel hidden-sm">
+		<div class="color-mode-icons icon-color"></div>
+		<div class="color-mode-icons icon-color-close"></div>
+		<div class="color-mode">
+			<p>THEME COLOR</p>
+			<ul class="inline">
+				<li class="color-red current color-default" data-style="red"></li>
+				<li class="color-blue" data-style="blue"></li>
+				<li class="color-green" data-style="green"></li>
+				<li class="color-orange" data-style="orange"></li>
+				<li class="color-gray" data-style="gray"></li>
+				<li class="color-turquoise" data-style="turquoise"></li>
+			</ul>
+		</div>
+	</div>
+	<!-- END BEGIN STYLE CUSTOMIZER -->
+
+	<!-- BEGIN TOP BAR -->
+	<div class="pre-header">
+		<div class="container">
+			<div class="row">
+				<!-- BEGIN TOP BAR LEFT PART -->
+				<div class="col-md-6 col-sm-6 additional-shop-info">
+					<ul class="list-unstyled list-inline">
+						<li><i class="fa fa-phone"></i><span>+1 456 6717</span></li>
+						<!-- BEGIN CURRENCIES -->
+						<li class="shop-currencies"><a href="javascript:void(0);">€</a>
+							<a href="javascript:void(0);">£</a> <a href="javascript:void(0);"
+							class="current">$</a></li>
+						<!-- END CURRENCIES -->
+						<!-- BEGIN LANGS -->
+						<li class="langs-block"><a href="javascript:void(0);"
+							class="current">English </a>
+							<div class="langs-block-others-wrapper">
+								<div class="langs-block-others">
+									<a href="javascript:void(0);">French</a> <a
+										href="javascript:void(0);">Germany</a> <a
+										href="javascript:void(0);">Turkish</a>
+								</div>
+							</div></li>
+						<!-- END LANGS -->
+					</ul>
+				</div>
+				<!-- END TOP BAR LEFT PART -->
+				<!-- BEGIN TOP BAR MENU -->
+				<div class="col-md-6 col-sm-6 additional-nav">
+					<ul class="list-unstyled list-inline pull-right">
+						<li><a href="shop-account.html">My Account</a></li>
+						<li><a href="shop-wishlist.html">My Wishlist</a></li>
+						<li><a href="shop-checkout.html">Checkout</a></li>
+						<li><a href="page-login.html">Log In</a></li>
+					</ul>
+				</div>
+				<!-- END TOP BAR MENU -->
+			</div>
+		</div>
+	</div>
+	<!-- END TOP BAR -->
+
+	<!-- BEGIN HEADER -->
+	<div class="header">
+		<div class="container">
+			<a class="site-logo" href="shop-index.html"><img
+				src="../testmaven/assets/frontend/layout/img/logos/logo-shop-red.png"
+				alt="Metronic Shop UI"></a> <a href="javascript:void(0);"
+				class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+			<!-- BEGIN CART -->
+			<div class="top-cart-block">
+				<div class="top-cart-info">
+					<a href="javascript:void(0);" class="top-cart-info-count">3
+						items</a> <a href="javascript:void(0);" class="top-cart-info-value">$1260</a>
+				</div>
+				<i class="fa fa-shopping-cart"></i>
+
+				<div class="top-cart-content-wrapper">
+					<div class="top-cart-content">
+						<div class="slimScrollDiv"
+							style="position: relative; overflow: hidden; width: auto; height: 250px;">
+							<ul class="scroller"
+								style="height: 250px; overflow: hidden; width: auto;">
+								<li><a href="shop-item.html"><img
+										src="../testmaven/assets/frontend/pages/img/cart-img.jpg"
+										alt="Rolex Classic Watch" width="37" height="34"></a> <span
+									class="cart-content-count">x 1</span> <strong><a
+										href="shop-item.html">Rolex Classic Watch</a></strong> <em>$1230</em> <a
+									href="javascript:void(0);" class="del-goods">&nbsp;</a></li>
+								<li><a href="shop-item.html"><img
+										src="../testmaven/assets/frontend/pages/img/cart-img.jpg"
+										alt="Rolex Classic Watch" width="37" height="34"></a> <span
+									class="cart-content-count">x 1</span> <strong><a
+										href="shop-item.html">Rolex Classic Watch</a></strong> <em>$1230</em> <a
+									href="javascript:void(0);" class="del-goods">&nbsp;</a></li>
+								<li><a href="shop-item.html"><img
+										src="../testmaven/assets/frontend/pages/img/cart-img.jpg"
+										alt="Rolex Classic Watch" width="37" height="34"></a> <span
+									class="cart-content-count">x 1</span> <strong><a
+										href="shop-item.html">Rolex Classic Watch</a></strong> <em>$1230</em> <a
+									href="javascript:void(0);" class="del-goods">&nbsp;</a></li>
+								<li><a href="shop-item.html"><img
+										src="../testmaven/assets/frontend/pages/img/cart-img.jpg"
+										alt="Rolex Classic Watch" width="37" height="34"></a> <span
+									class="cart-content-count">x 1</span> <strong><a
+										href="shop-item.html">Rolex Classic Watch</a></strong> <em>$1230</em> <a
+									href="javascript:void(0);" class="del-goods">&nbsp;</a></li>
+								<li><a href="shop-item.html"><img
+										src="../testmaven/assets/frontend/pages/img/cart-img.jpg"
+										alt="Rolex Classic Watch" width="37" height="34"></a> <span
+									class="cart-content-count">x 1</span> <strong><a
+										href="shop-item.html">Rolex Classic Watch</a></strong> <em>$1230</em> <a
+									href="javascript:void(0);" class="del-goods">&nbsp;</a></li>
+								<li><a href="shop-item.html"><img
+										src="../testmaven/assets/frontend/pages/img/cart-img.jpg"
+										alt="Rolex Classic Watch" width="37" height="34"></a> <span
+									class="cart-content-count">x 1</span> <strong><a
+										href="shop-item.html">Rolex Classic Watch</a></strong> <em>$1230</em> <a
+									href="javascript:void(0);" class="del-goods">&nbsp;</a></li>
+								<li><a href="shop-item.html"><img
+										src="../testmaven/assets/frontend/pages/img/cart-img.jpg"
+										alt="Rolex Classic Watch" width="37" height="34"></a> <span
+									class="cart-content-count">x 1</span> <strong><a
+										href="shop-item.html">Rolex Classic Watch</a></strong> <em>$1230</em> <a
+									href="javascript:void(0);" class="del-goods">&nbsp;</a></li>
+								<li><a href="shop-item.html"><img
+										src="../testmaven/assets/frontend/pages/img/cart-img.jpg"
+										alt="Rolex Classic Watch" width="37" height="34"></a> <span
+									class="cart-content-count">x 1</span> <strong><a
+										href="shop-item.html">Rolex Classic Watch</a></strong> <em>$1230</em> <a
+									href="javascript:void(0);" class="del-goods">&nbsp;</a></li>
+							</ul>
+							<div class="slimScrollBar"
+								style="background: rgb(187, 187, 187); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div>
+							<div class="slimScrollRail"
+								style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div>
+						</div>
+						<div class="text-right">
+							<a href="shop-shopping-cart.html" class="btn btn-default">View
+								Cart</a> <a href="shop-checkout.html" class="btn btn-primary">Checkout</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--END CART -->
+
+			<!-- BEGIN NAVIGATION -->
+			<div class="header-navigation">
+				<ul>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" data-target="#" href="#"> Woman </a> <!-- BEGIN DROPDOWN MENU -->
+						<ul class="dropdown-menu">
+							<li class="dropdown-submenu"><a
+								href="shop-product-list.html">Hi Tops <i
+									class="fa fa-angle-right"></i></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="shop-product-list.html">Second Level Link</a></li>
+									<li><a href="shop-product-list.html">Second Level Link</a></li>
+									<li class="dropdown-submenu"><a class="dropdown-toggle"
+										data-toggle="dropdown" data-target="#" href="#"> Second
+											Level Link <i class="fa fa-angle-right"></i>
+									</a>
+										<ul class="dropdown-menu">
+											<li><a href="shop-product-list.html">Third Level
+													Link</a></li>
+											<li><a href="shop-product-list.html">Third Level
+													Link</a></li>
+											<li><a href="shop-product-list.html">Third Level
+													Link</a></li>
+										</ul></li>
+								</ul></li>
+							<li><a href="shop-product-list.html">Running Shoes</a></li>
+							<li><a href="shop-product-list.html">Jackets and Coats</a></li>
+						</ul> <!-- END DROPDOWN MENU --></li>
+					<li class="dropdown dropdown-megamenu"><a
+						class="dropdown-toggle" data-toggle="dropdown" data-target="#"
+						href="#"> Man </a>
+						<ul class="dropdown-menu">
+							<li>
+								<div class="header-navigation-content">
+									<div class="row">
+										<div class="col-md-4 header-navigation-col">
+											<h4>Footwear</h4>
+											<ul>
+												<li><a href="shop-product-list.html">Astro Trainers</a></li>
+												<li><a href="shop-product-list.html">Basketball
+														Shoes</a></li>
+												<li><a href="shop-product-list.html">Boots</a></li>
+												<li><a href="shop-product-list.html">Canvas Shoes</a></li>
+												<li><a href="shop-product-list.html">Football Boots</a></li>
+												<li><a href="shop-product-list.html">Golf Shoes</a></li>
+												<li><a href="shop-product-list.html">Hi Tops</a></li>
+												<li><a href="shop-product-list.html">Indoor and
+														Court Trainers</a></li>
+											</ul>
+										</div>
+										<div class="col-md-4 header-navigation-col">
+											<h4>Clothing</h4>
+											<ul>
+												<li><a href="shop-product-list.html">Base Layer</a></li>
+												<li><a href="shop-product-list.html">Character</a></li>
+												<li><a href="shop-product-list.html">Chinos</a></li>
+												<li><a href="shop-product-list.html">Combats</a></li>
+												<li><a href="shop-product-list.html">Cricket
+														Clothing</a></li>
+												<li><a href="shop-product-list.html">Fleeces</a></li>
+												<li><a href="shop-product-list.html">Gilets</a></li>
+												<li><a href="shop-product-list.html">Golf Tops</a></li>
+											</ul>
+										</div>
+										<div class="col-md-4 header-navigation-col">
+											<h4>Accessories</h4>
+											<ul>
+												<li><a href="shop-product-list.html">Belts</a></li>
+												<li><a href="shop-product-list.html">Caps</a></li>
+												<li><a href="shop-product-list.html">Gloves, Hats
+														and Scarves</a></li>
+											</ul>
+
+											<h4>Clearance</h4>
+											<ul>
+												<li><a href="shop-product-list.html">Jackets</a></li>
+												<li><a href="shop-product-list.html">Bottoms</a></li>
+											</ul>
+										</div>
+										<div class="col-md-12 nav-brands">
+											<ul>
+												<li><a href="shop-product-list.html"><img
+														title="esprit" alt="esprit"
+														src="../testmaven/assets/frontend/pages/img/brands/esprit.jpg"></a></li>
+												<li><a href="shop-product-list.html"><img
+														title="gap" alt="gap"
+														src="../testmaven/assets/frontend/pages/img/brands/gap.jpg"></a></li>
+												<li><a href="shop-product-list.html"><img
+														title="next" alt="next"
+														src="../testmaven/assets/frontend/pages/img/brands/next.jpg"></a></li>
+												<li><a href="shop-product-list.html"><img
+														title="puma" alt="puma"
+														src="../testmaven/assets/frontend/pages/img/brands/puma.jpg"></a></li>
+												<li><a href="shop-product-list.html"><img
+														title="zara" alt="zara"
+														src="../testmaven/assets/frontend/pages/img/brands/zara.jpg"></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul></li>
+					<li><a href="shop-item.html">Kids</a></li>
+					<li class="dropdown dropdown100 nav-catalogue"><a
+						class="dropdown-toggle" data-toggle="dropdown" data-target="#"
+						href="#"> New </a>
+						<ul class="dropdown-menu">
+							<li>
+								<div class="header-navigation-content">
+									<div class="row">
+										<div class="col-md-3 col-sm-4 col-xs-6">
+											<div class="product-item">
+												<div class="pi-img-wrapper">
+													<a href="shop-item.html"><img
+														src="../testmaven/assets/frontend/pages/img/products/model4.jpg"
+														class="img-responsive" alt="Berry Lace Dress"></a>
+												</div>
+												<h3>
+													<a href="shop-item.html">Berry Lace Dress</a>
+												</h3>
+												<div class="pi-price">$29.00</div>
+												<a href="#" class="btn btn-default add2cart">Add to cart</a>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-4 col-xs-6">
+											<div class="product-item">
+												<div class="pi-img-wrapper">
+													<a href="shop-item.html"><img
+														src="../testmaven/assets/frontend/pages/img/products/model3.jpg"
+														class="img-responsive" alt="Berry Lace Dress"></a>
+												</div>
+												<h3>
+													<a href="shop-item.html">Berry Lace Dress</a>
+												</h3>
+												<div class="pi-price">$29.00</div>
+												<a href="#" class="btn btn-default add2cart">Add to cart</a>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-4 col-xs-6">
+											<div class="product-item">
+												<div class="pi-img-wrapper">
+													<a href="shop-item.html"><img
+														src="../testmaven/assets/frontend/pages/img/products/model7.jpg"
+														class="img-responsive" alt="Berry Lace Dress"></a>
+												</div>
+												<h3>
+													<a href="shop-item.html">Berry Lace Dress</a>
+												</h3>
+												<div class="pi-price">$29.00</div>
+												<a href="#" class="btn btn-default add2cart">Add to cart</a>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-4 col-xs-6">
+											<div class="product-item">
+												<div class="pi-img-wrapper">
+													<a href="shop-item.html"><img
+														src="../testmaven/assets/frontend/pages/img/products/model4.jpg"
+														class="img-responsive" alt="Berry Lace Dress"></a>
+												</div>
+												<h3>
+													<a href="shop-item.html">Berry Lace Dress</a>
+												</h3>
+												<div class="pi-price">$29.00</div>
+												<a href="#" class="btn btn-default add2cart">Add to cart</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" data-target="#" href="#"> Pages </a>
+
+						<ul class="dropdown-menu">
+							<li class="active"><a href="shop-index.html">Home
+									Default</a></li>
+							<li><a href="shop-index-header-fix.html">Home Header
+									Fixed</a></li>
+							<li><a href="shop-index-light-footer.html">Home Light
+									Footer</a></li>
+							<li><a href="shop-product-list.html">Product List</a></li>
+							<li><a href="shop-search-result.html">Search Result</a></li>
+							<li><a href="shop-item.html">Product Page</a></li>
+							<li><a href="shop-shopping-cart-null.html">Shopping Cart
+									(Null Cart)</a></li>
+							<li><a href="shop-shopping-cart.html">Shopping Cart</a></li>
+							<li><a href="shop-checkout.html">Checkout</a></li>
+							<li><a href="shop-about.html">About</a></li>
+							<li><a href="shop-contacts.html">Contacts</a></li>
+							<li><a href="shop-account.html">My account</a></li>
+							<li><a href="shop-wishlist.html">My Wish List</a></li>
+							<li><a href="shop-goods-compare.html">Product Comparison</a></li>
+							<li><a href="shop-standart-forms.html">Standart Forms</a></li>
+							<li><a href="shop-faq.html">FAQ</a></li>
+							<li><a href="shop-privacy-policy.html">Privacy Policy</a></li>
+							<li><a href="shop-terms-conditions-page.html">Terms
+									&amp; Conditions</a></li>
+						</ul></li>
+					<li><a href="index.html" target="_blank">Corporate</a></li>
+					<li><a href="onepage-index.html" target="_blank">One Page</a></li>
+					<li><a
+						href="http://keenthemes.com/preview/metronic/theme/templates/admin&amp;page=ecommerce_index.html"
+						target="_blank">Admin theme</a></li>
+
+					<!-- BEGIN TOP SEARCH -->
+					<li class="menu-search"><span class="sep"></span> <i
+						class="fa fa-search search-btn"></i>
+						<div class="search-box">
+							<form action="#">
+								<div class="input-group">
+									<input type="text" placeholder="Search" class="form-control">
+									<span class="input-group-btn">
+										<button class="btn btn-primary" type="submit">Search</button>
+									</span>
+								</div>
+							</form>
+						</div></li>
+					<!-- END TOP SEARCH -->
+				</ul>
+			</div>
+			<!-- END NAVIGATION -->
+		</div>
+	</div>
+	<!-- Header END -->
+
+	<!-- BEGIN SLIDER -->
+	<div class="page-slider margin-bottom-35">
+		<!-- LayerSlider start -->
+		<div id="layerslider"
+			style="width: 100%; height: 494px; margin: 0px auto; visibility: visible;"
+			class="ls-container ls-fullwidth">
+
+			<!-- slide one start -->
+			<div class="ls-inner"
+				style="background-color: transparent; width: 970px; height: 494px;">
+				<div class="ls-lt-container ls-overflow-hidden"
+					style="width: 970px; height: 494px; display: block;">
+					<div class="ls-curtiles" style="overflow: hidden;">
+						<img
+							src="../testmaven/assets/frontend/pages/img/layerslider/slide2/bg.jpg"
+							style="width: 1500px; height: 495px; margin-left: -265px; margin-top: -0.5px;">
+					</div>
+					<div class="ls-nexttiles">
+						<div class="ls-lt-tile"
+							style="width: 165px; height: 494px; overflow: visible;">
+							<div class="ls-nexttile"
+								style="top: 0px; left: 0px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+								<img
+									src="../testmaven/template-v3.6/theme/assets/frontend/pages/img/layerslider/slide3/bg.jpg"
+									style="width: 1500px; height: 495px; margin-left: -265px; margin-top: -0.5px;">
+							</div>
+						</div>
+						<div class="ls-lt-tile"
+							style="width: 161px; height: 494px; overflow: visible;">
+							<div class="ls-nexttile"
+								style="top: 0px; left: 0px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+								<img
+									src="../testmaven/template-v3.6/theme/assets/frontend/pages/img/layerslider/slide3/bg.jpg"
+									style="width: 1500px; height: 495px; margin-left: -430px; margin-top: -0.5px;">
+							</div>
+						</div>
+						<div class="ls-lt-tile"
+							style="width: 161px; height: 494px; overflow: visible;">
+							<div class="ls-nexttile"
+								style="top: 0px; left: 0px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+								<img
+									src="../testmaven/template-v3.6/theme/assets/frontend/pages/img/layerslider/slide3/bg.jpg"
+									style="width: 1500px; height: 495px; margin-left: -591px; margin-top: -0.5px;">
+							</div>
+						</div>
+						<div class="ls-lt-tile"
+							style="width: 161px; height: 494px; overflow: visible;">
+							<div class="ls-nexttile"
+								style="top: 0px; left: 0px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+								<img
+									src="../testmaven/template-v3.6/theme/assets/frontend/pages/img/layerslider/slide3/bg.jpg"
+									style="width: 1500px; height: 495px; margin-left: -752px; margin-top: -0.5px;">
+							</div>
+						</div>
+						<div class="ls-lt-tile"
+							style="width: 161px; height: 494px; overflow: visible;">
+							<div class="ls-nexttile"
+								style="top: 0px; left: 0px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+								<img
+									src="../testmaven/template-v3.6/theme/assets/frontend/pages/img/layerslider/slide3/bg.jpg"
+									style="width: 1500px; height: 495px; margin-left: -913px; margin-top: -0.5px;">
+							</div>
+						</div>
+						<div class="ls-lt-tile"
+							style="width: 161px; height: 494px; overflow: visible;">
+							<div class="ls-nexttile"
+								style="top: 0px; left: 0px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+								<img
+									src="../testmaven/template-v3.6/theme/assets/frontend/pages/img/layerslider/slide3/bg.jpg"
+									style="width: 1500px; height: 495px; margin-left: -1074px; margin-top: -0.5px;">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ls-slide ls-slide1"
+					data-ls="offsetxin: right; slidedelay: 7000; transition2d: 24,25,27,28;"
+					style="width: 0px; height: 494px; visibility: visible; display: none; inset: 0px auto auto 0px;">
+
+					<img
+						src="../testmaven/assets/frontend/pages/img/layerslider/slide1/bg.jpg"
+						class="ls-bg ls-preloaded" alt="Slide background"
+						style="padding: 0px; border-width: 0px; width: 1500px; height: 495px; margin-left: -265px; margin-top: -0.5px; visibility: hidden;">
+					<div class="ls-gpuhack"
+						style="width: auto; height: auto; padding: 0px; border-width: 0px; left: 5px; top: 0px;"></div>
+
+					<div class="ls-l ls-title"
+						style="top: 96px; left: 93px; white-space: nowrap; width: auto; height: auto; font-size: 60px; line-height: 66px; padding: 0px 0px 19px; border-width: 0px; visibility: hidden; margin-left: 0px; margin-top: 0px; transform-origin: 50% 50% 0px; transform: matrix3d(0, -0.5, 0, 0, 0.5, 0, 0, 0, 0, 0, 1, -0.002, -80, 0, 0, 1); opacity: 1; filter: none;"
+						data-ls="
+            fade: true; 
+            fadeout: true; 
+            durationin: 750; 
+            durationout: 750; 
+            easingin: easeOutQuint; 
+            rotatein: 90; 
+            rotateout: -90; 
+            scalein: .5; 
+            scaleout: .5; 
+            showuntil: 4000;
+          ">
+						Tones of <strong>shop UI features</strong> designed
+					</div>
+
+					<div class="ls-l ls-mini-text"
+						style="top: 338px; left: 112.5px; white-space: nowrap; width: auto; height: auto; font-size: 23px; padding: 0px; border-width: 0px; visibility: hidden; margin-left: 0px; margin-top: 0px; transform-origin: 50% 50% 0px; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.002, -80, 0, 0, 1); opacity: 1; filter: none;"
+						data-ls="
+          fade: true; 
+          fadeout: true; 
+          durationout: 750; 
+          easingin: easeOutQuint; 
+          delayin: 300; 
+          showuntil: 4000;
+          ">
+						Lorem ipsum dolor sit amet constectetuer diam<br> adipiscing
+						elit euismod ut laoreet dolore.
+					</div>
+				</div>
+				<div class="ls-slide ls-slide2"
+					data-ls="offsetxin: right; slidedelay: 7000; transition2d: 110,111,112,113;"
+					style="width: 0px; height: 494px; visibility: visible; display: none; inset: 0px auto auto 0px;">
+
+					<img
+						src="../testmaven/assets/frontend/pages/img/layerslider/slide2/bg.jpg"
+						class="ls-bg ls-preloaded" alt="Slide background"
+						style="padding: 0px; border-width: 0px; width: 1500px; height: 495px; margin-left: -265px; margin-top: -0.5px; visibility: hidden;">
+					<div class="ls-gpuhack"
+						style="width: auto; height: auto; padding: 0px; border-width: 0px; left: 5px; top: 0px;"></div>
+
+					<div class="ls-l ls-title"
+						style="top: 91.6px; left: 34.2px; white-space: nowrap; width: auto; height: auto; font-size: 25px; line-height: 30px; padding: 0px; border-width: 0px; margin-left: 0px; margin-top: 0px; transform-origin: 50% 50% 0px; transform: matrix3d(0, -0.5, 0, 0, 0.5, 0, 0, 0, 0, 0, 1, -0.002, -80, 0, 0, 1); opacity: 1; visibility: hidden; filter: none;"
+						data-ls="
+          fade: true; 
+          fadeout: true;  
+          durationin: 750; durationout: 109750; 
+          easingin: easeOutQuint; 
+          easingout: easeInOutQuint; 
+          delayin: 0; 
+          delayout: 0; 
+          rotatein: 90; 
+          rotateout: -90; 
+          scalein: .5; 
+          scaleout: .5; 
+          showuntil: 4000;
+          ">
+						<strong>Unlimted</strong> Layout Options <em>Fully Responsive</em>
+					</div>
+
+					<div class="ls-l ls-price"
+						style="top: 158.5px; left: 348px; white-space: nowrap; width: 177px; height: 177px; font-size: 20px; padding: 0px; border-width: 0px; margin-left: 0px; margin-top: 0px; transform-origin: 50% 50% 0px; transform: matrix3d(0.8, 0, 0, 0, 0, 0.8, 0, 0, 0, 0, 1, -0.002, -80, 0, 0, 1); opacity: 1; visibility: hidden; filter: none;"
+						data-ls="
+          fade: true; 
+          fadeout: true;  
+          durationout: 109750; 
+          easingin: easeOutQuint; 
+          delayin: 300; 
+          scalein: .8; 
+          scaleout: .8; 
+          showuntil: 4000;">
+						<b>from</b> <strong><span>$</span>25</strong>
+					</div>
+
+					<a href="#" class="ls-l ls-more"
+						style="top: 336.18px; left: 115.2px; display: inline-block; white-space: nowrap; width: auto; height: auto; font-size: 18px; padding: 7px 20px 8px; border-width: 0px; margin-left: 0px; margin-top: 0px; transform-origin: 50% 50% 0px; transform: matrix3d(0, -0.5, 0, 0, 0.5, 0, 0, 0, 0, 0, 1, -0.002, -80, 0, 0, 1); opacity: 1; visibility: hidden; filter: none;"
+						data-ls="
+          fade: true; 
+          fadeout: true; 
+          durationin: 750; 
+          durationout: 750; 
+          easingin: easeOutQuint; 
+          easingout: easeInOutQuint; 
+          delayin: 0; 
+          delayout: 0; 
+          rotatein: 90; 
+          rotateout: -90; 
+          scalein: .5; 
+          scaleout: .5; 
+          showuntil: 4000;">See
+						More Details </a>
+				</div>
+				<div class="ls-slide ls-slide3 ls-active"
+					data-ls="offsetxin: right; slidedelay: 7000; transition2d: 92,93,105;"
+					style="width: 970px; height: 494px; visibility: visible; display: none; inset: 0px 0px auto auto;">
+
+					<img
+						src="../testmaven/template-v3.6/theme/assets/frontend/pages/img/layerslider/slide3/bg.jpg"
+						class="ls-bg ls-preloaded" alt="Slide background"
+						style="padding: 0px; border-width: 0px; width: 1500px; height: 495px; margin-left: -265px; margin-top: -0.5px; visibility: visible;">
+					<div class="ls-gpuhack"
+						style="width: auto; height: auto; padding: 0px; border-width: 0px; left: 5px; top: 0px;"></div>
+
+					<div class="ls-l ls-title"
+						style="top: 83px; left: 92.6px; white-space: nowrap; width: auto; height: auto; font-size: 46px; line-height: 59px; padding: 0px 0px 27px; border-width: 0px; margin-left: 0px; margin-top: 0px; transform-origin: 50% 50% 0px; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.002, 0, 0, 0, 1); opacity: 1; visibility: visible;"
+						data-ls="
+          fade: true; 
+          fadeout: true; 
+          durationin: 750; 
+          durationout: 750; 
+          easingin: easeOutQuint; 
+          rotatein: 90; 
+          rotateout: -90; 
+          scalein: .5; 
+          scaleout: .5; 
+          showuntil: 4000;
+          ">
+						Full Admin &amp; Frontend <strong>eCommerce UI</strong> Is Ready
+						For Your Project
+					</div>
+					<div class="ls-l"
+						style="top: 333px; left: 121.6px; white-space: nowrap; font: 20px&amp;quot; Open Sans Light&amp;quot; , sans-serif; width: auto; height: auto; padding: 0px; border-width: 0px; margin-left: 0px; margin-top: 0px; transform-origin: 50% 50% 0px; transform: matrix3d(0.99999, 0, 0, 0, 0, 0.99999, 0, 0, 0, 0, 1, -0.002, 0, 0, 0, 1); opacity: 1; visibility: visible;"
+						data-ls="
+          fade: true; 
+          fadeout: true; 
+          durationout: 750; 
+          easingin: easeOutQuint; 
+          delayin: 300; 
+          scalein: .8; 
+          scaleout: .8; 
+          showuntil: 4000;
+          ">
+						<a href="#" class="ls-buy"> Buy It Now! </a>
+						<div class="ls-price">
+							<span>All these for only:</span> <strong>25<sup>$</sup></strong>
+						</div>
+					</div>
+				</div>
+				<div class="ls-slide ls-slide4"
+					data-ls="offsetxin: right; slidedelay: 7000; transition2d: 110,111,112,113;"
+					style="width: 1524px; height: 494px; inset: 0px auto auto 0px;">
+
+					<img
+						src="../testmaven/assets/frontend/pages/img/layerslider/slide5/bg.jpg"
+						class="ls-bg ls-preloaded" alt="Slide background">
+					<div class="ls-gpuhack"></div>
+
+					<div class="ls-l ls-title"
+						style="top: 35%; left: 60%; white-space: nowrap; filter: none;"
+						data-ls="
+          fade: true; 
+          fadeout: true; 
+          durationin: 750; 
+          durationout: 750; 
+          easingin: easeOutQuint; 
+          rotatein: 90; 
+          rotateout: -90; 
+          scalein: .5; 
+          scaleout: .5; 
+          showuntil: 4000;">
+						The most<br> wanted bijouterie
+					</div>
+
+					<div class="ls-l ls-mini-text"
+						style="top: 70%; left: 60%; white-space: nowrap; filter: none;"
+						data-ls="
+          fade: true; 
+          fadeout: true;  
+          durationout: 750; 
+          easingin: easeOutQuint; 
+          delayin: 300; 
+          scalein: .8; 
+          scaleout: .8; 
+          showuntil: 4000;">
+						<span>Lorem ipsum and</span> <a href="#">Buy It Now!</a>
+					</div>
+
+				</div>
+				<div class="ls-circle-timer" style="display: block;">
+					<div class="ls-ct-left">
+						<div class="ls-ct-rotate"
+							style="transform: matrix(1, 0, 0, 1, 0, 0);">
+							<div class="ls-ct-hider">
+								<div class="ls-ct-half"></div>
+							</div>
+						</div>
+					</div>
+					<div class="ls-ct-right">
+						<div class="ls-ct-rotate"
+							style="transform: matrix(0.77222, 0.63534, -0.63534, 0.77222, 0, 0);">
+							<div class="ls-ct-hider">
+								<div class="ls-ct-half"></div>
+							</div>
+						</div>
+					</div>
+					<div class="ls-ct-center"></div>
+				</div>
+			</div>
+			<!-- slide one end -->
+
+			<!-- slide two start -->
+
+			<!-- slide two end -->
+
+			<!-- slide three start -->
+
+			<!-- slide three end -->
+
+			<!-- slide four start -->
+
+			<!-- slide four end -->
+			<div class="ls-loading-container" style="z-index: -1; display: none;">
+				<div class="ls-loading-indicator"></div>
+			</div>
+			<a class="ls-nav-prev" href="#" style="visibility: visible;"></a><a
+				class="ls-nav-next" href="#" style="visibility: visible;"></a>
+			<div class="ls-bottom-nav-wrapper" style="visibility: visible;">
+				<a class="ls-nav-start ls-nav-start-active" href="#"></a><span
+					class="ls-bottom-slidebuttons"><a href="#" class=""></a><a
+					href="#" class=""></a><a href="#" class="ls-nav-active"></a><a
+					href="#" class=""></a>
+				<div class="ls-thumbnail-hover" style="width: 100px; height: 60px;">
+						<div class="ls-thumbnail-hover-inner"
+							style="visibility: hidden; display: block;">
+							<div class="ls-thumbnail-hover-bg"></div>
+							<div class="ls-thumbnail-hover-img"
+								style="width: 100px; height: 60px;">
+								<img style="height: 60px;">
+							</div>
+							<span></span>
+						</div>
+					</div></span><a class="ls-nav-stop" href="#"></a>
+			</div>
+			<div class="ls-shadow"></div>
+		</div>
+		<!-- LayerSlider end -->
+	</div>
+	<!-- END SLIDER -->
+
+	<div class="main">
+		<div class="container">
+			<!-- BEGIN SALE PRODUCT & NEW ARRIVALS -->
+			<div class="row margin-bottom-40">
+				<!-- BEGIN SALE PRODUCT -->
+				<div class="col-md-12 sale-product">
+					<h2>New Arrivals</h2>
+					<div class="owl-carousel owl-carousel5 owl-theme"
+						style="opacity: 1; display: block;">
+						<div class="owl-wrapper-outer">
+							<div class="owl-wrapper"
+								style="width: 3360px; left: 0px; display: block; transition: all; transform: translate3d(0px, 0px, 0px);">
+								<div class="owl-item active" style="width: 240px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img
+													src="../testmaven/assets/frontend/pages/img/products/model1.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a
+														href="../testmaven/assets/frontend/pages/img/products/model1.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="shop-item.html">Berry Lace Dress</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+											<div class="sticker sticker-sale"></div>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item active" style="width: 240px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img
+													src="../testmaven/assets/frontend/pages/img/products/model2.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a
+														href="../testmaven/assets/frontend/pages/img/products/model2.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="shop-item.html">Berry Lace Dress2</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item active" style="width: 240px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img
+													src="../testmaven/assets/frontend/pages/img/products/model6.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a
+														href="../testmaven/assets/frontend/pages/img/products/model6.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="shop-item.html">Berry Lace Dress2</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item" style="width: 240px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img
+													src="../testmaven/assets/frontend/pages/img/products/model4.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a
+														href="../testmaven/assets/frontend/pages/img/products/model4.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="#">Berry Lace Dress4</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+											<div class="sticker sticker-new"></div>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item" style="width: 240px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img
+													src="../testmaven/assets/frontend/pages/img/products/model5.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a
+														href="../testmaven/assets/frontend/pages/img/products/model5.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="shop-item.html">Berry Lace Dress5</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item" style="width: 240px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img
+													src="../testmaven/assets/frontend/pages/img/products/model3.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a
+														href="../testmaven/assets/frontend/pages/img/products/model3.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="shop-item.html">Berry Lace Dress3</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item" style="width: 240px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img
+													src="../testmaven/assets/frontend/pages/img/products/model7.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a
+														href="../testmaven/assets/frontend/pages/img/products/model7.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="shop-item.html">Berry Lace Dress3</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+						<div class="owl-controls clickable">
+							<div class="owl-buttons">
+								<div class="owl-prev">prev</div>
+								<div class="owl-next">next</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END SALE PRODUCT -->
+			</div>
+			<!-- END SALE PRODUCT & NEW ARRIVALS -->
+
+			<!-- BEGIN SIDEBAR & CONTENT -->
+			<div class="row margin-bottom-40 ">
+				<!-- BEGIN SIDEBAR -->
+				<div class="sidebar col-md-3 col-sm-4">
+					<ul class="list-group margin-bottom-25 sidebar-menu">
+						<li class="list-group-item clearfix"><a
+							href="shop-product-list.html"><i class="fa fa-angle-right"></i>
+								Ladies</a></li>
+						<li class="list-group-item clearfix dropdown"><a
+							href="shop-product-list.html"> <i class="fa fa-angle-right"></i>
+								Mens
+
+						</a>
+							<ul class="dropdown-menu">
+								<li class="list-group-item dropdown clearfix"><a
+									href="shop-product-list.html"><i class="fa fa-angle-right"></i>
+										Shoes </a>
+									<ul class="dropdown-menu">
+										<li class="list-group-item dropdown clearfix"><a
+											href="shop-product-list.html"><i
+												class="fa fa-angle-right"></i> Classic </a>
+											<ul class="dropdown-menu">
+												<li><a href="shop-product-list.html"><i
+														class="fa fa-angle-right"></i> Classic 1</a></li>
+												<li><a href="shop-product-list.html"><i
+														class="fa fa-angle-right"></i> Classic 2</a></li>
+											</ul></li>
+										<li class="list-group-item dropdown clearfix"><a
+											href="shop-product-list.html"><i
+												class="fa fa-angle-right"></i> Sport </a>
+											<ul class="dropdown-menu">
+												<li><a href="shop-product-list.html"><i
+														class="fa fa-angle-right"></i> Sport 1</a></li>
+												<li><a href="shop-product-list.html"><i
+														class="fa fa-angle-right"></i> Sport 2</a></li>
+											</ul></li>
+									</ul></li>
+								<li><a href="shop-product-list.html"><i
+										class="fa fa-angle-right"></i> Trainers</a></li>
+								<li><a href="shop-product-list.html"><i
+										class="fa fa-angle-right"></i> Jeans</a></li>
+								<li><a href="shop-product-list.html"><i
+										class="fa fa-angle-right"></i> Chinos</a></li>
+								<li><a href="shop-product-list.html"><i
+										class="fa fa-angle-right"></i> T-Shirts</a></li>
+							</ul></li>
+						<li class="list-group-item clearfix"><a
+							href="shop-product-list.html"><i class="fa fa-angle-right"></i>
+								Kids</a></li>
+						<li class="list-group-item clearfix"><a
+							href="shop-product-list.html"><i class="fa fa-angle-right"></i>
+								Accessories</a></li>
+						<li class="list-group-item clearfix"><a
+							href="shop-product-list.html"><i class="fa fa-angle-right"></i>
+								Sports</a></li>
+						<li class="list-group-item clearfix"><a
+							href="shop-product-list.html"><i class="fa fa-angle-right"></i>
+								Brands</a></li>
+						<li class="list-group-item clearfix"><a
+							href="shop-product-list.html"><i class="fa fa-angle-right"></i>
+								Electronics</a></li>
+						<li class="list-group-item clearfix"><a
+							href="shop-product-list.html"><i class="fa fa-angle-right"></i>
+								Home &amp; Garden</a></li>
+						<li class="list-group-item clearfix"><a
+							href="shop-product-list.html"><i class="fa fa-angle-right"></i>
+								Custom Link</a></li>
+					</ul>
+				</div>
+				<!-- END SIDEBAR -->
+				<!-- BEGIN CONTENT -->
+				<div class="col-md-9 col-sm-8">
+					<h2>Three items</h2>
+					<div class="owl-carousel owl-carousel3 owl-theme"
+						style="opacity: 1; display: block;">
+						<div class="owl-wrapper-outer">
+							<div class="owl-wrapper"
+								style="width: 2820px; left: 0px; display: block; transition: all; transform: translate3d(0px, 0px, 0px);">
+								<div class="owl-item active" style="width: 235px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img src="../testmaven/assets/frontend/pages/img/products/k1.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a href="../testmaven/assets/frontend/pages/img/products/k1.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="shop-item.html">Berry Lace Dress</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+											<div class="sticker sticker-new"></div>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item active" style="width: 235px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img src="../testmaven/assets/frontend/pages/img/products/k2.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a href="../testmaven/assets/frontend/pages/img/products/k2.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="shop-item.html">Berry Lace Dress2</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item" style="width: 235px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img src="../testmaven/assets/frontend/pages/img/products/k3.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a href="../testmaven/assets/frontend/pages/img/products/k3.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="shop-item.html">Berry Lace Dress3</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item" style="width: 235px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img src="../testmaven/assets/frontend/pages/img/products/k4.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a href="../testmaven/assets/frontend/pages/img/products/k4.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="shop-item.html">Berry Lace Dress4</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+											<div class="sticker sticker-sale"></div>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item" style="width: 235px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img src="../testmaven/assets/frontend/pages/img/products/k1.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a href="../testmaven/assets/frontend/pages/img/products/k1.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="shop-item.html">Berry Lace Dress5</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item" style="width: 235px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img src="../testmaven/assets/frontend/pages/img/products/k2.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a href="../testmaven/assets/frontend/pages/img/products/k2.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="shop-item.html">Berry Lace Dress6</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+						<div class="owl-controls clickable">
+							<div class="owl-buttons">
+								<div class="owl-prev">prev</div>
+								<div class="owl-next">next</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END CONTENT -->
+			</div>
+			<!-- END SIDEBAR & CONTENT -->
+
+			<!-- BEGIN TWO PRODUCTS & PROMO -->
+			<div class="row margin-bottom-35 ">
+				<!-- BEGIN TWO PRODUCTS -->
+				<div class="col-md-6 two-items-bottom-items">
+					<h2>Two items</h2>
+					<div class="owl-carousel owl-carousel2 owl-theme"
+						style="opacity: 1; display: block;">
+						<div class="owl-wrapper-outer">
+							<div class="owl-wrapper"
+								style="width: 2880px; left: 0px; display: block; transition: all; transform: translate3d(0px, 0px, 0px);">
+								<div class="owl-item active" style="width: 240px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img src="../testmaven/assets/frontend/pages/img/products/k4.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a href="../testmaven/assets/frontend/pages/img/products/k4.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="shop-item.html">Berry Lace Dress</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item active" style="width: 240px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img src="../testmaven/assets/frontend/pages/img/products/k2.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a href="../testmaven/assets/frontend/pages/img/products/k2.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="shop-item.html">Berry Lace Dress</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item active" style="width: 240px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img src="../testmaven/assets/frontend/pages/img/products/k3.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a href="../testmaven/assets/frontend/pages/img/products/k3.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="shop-item.html">Berry Lace Dress</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item" style="width: 240px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img src="../testmaven/assets/frontend/pages/img/products/k1.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a href="../testmaven/assets/frontend/pages/img/products/k1.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="shop-item.html">Berry Lace Dress</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item" style="width: 240px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img src="../testmaven/assets/frontend/pages/img/products/k4.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a href="../testmaven/assets/frontend/pages/img/products/k4.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="shop-item.html">Berry Lace Dress</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+										</div>
+									</div>
+								</div>
+								<div class="owl-item" style="width: 240px;">
+									<div>
+										<div class="product-item">
+											<div class="pi-img-wrapper">
+												<img src="../testmaven/assets/frontend/pages/img/products/k3.jpg"
+													class="img-responsive" alt="Berry Lace Dress">
+												<div>
+													<a href="../testmaven/assets/frontend/pages/img/products/k3.jpg"
+														class="btn btn-default fancybox-button">Zoom</a> <a
+														href="#product-pop-up"
+														class="btn btn-default fancybox-fast-view">View</a>
+												</div>
+											</div>
+											<h3>
+												<a href="shop-item.html">Berry Lace Dress</a>
+											</h3>
+											<div class="pi-price">$29.00</div>
+											<a href="#" class="btn btn-default add2cart">Add to cart</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+						<div class="owl-controls clickable">
+							<div class="owl-buttons">
+								<div class="owl-prev">prev</div>
+								<div class="owl-next">next</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END TWO PRODUCTS -->
+				<!-- BEGIN PROMO -->
+				<div class="col-md-6 shop-index-carousel">
+					<div class="content-slider">
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+								<li data-target="#myCarousel" data-slide-to="2" class=""></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="item active">
+									<img
+										src="../testmaven/assets/frontend/pages/img/index-sliders/slide1.jpg"
+										class="img-responsive" alt="Berry Lace Dress">
+								</div>
+								<div class="item">
+									<img
+										src="../testmaven/assets/frontend/pages/img/index-sliders/slide2.jpg"
+										class="img-responsive" alt="Berry Lace Dress">
+								</div>
+								<div class="item">
+									<img
+										src="../testmaven/template-v3.6/theme/assets/frontend/pages/img/index-sliders/slide3.jpg"
+										class="img-responsive" alt="Berry Lace Dress">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END PROMO -->
+			</div>
+			<!-- END TWO PRODUCTS & PROMO -->
+		</div>
+	</div>
+
+	<!-- BEGIN BRANDS -->
+	<div class="brands">
+		<div class="container">
+			<div class="owl-carousel owl-carousel6-brands owl-theme"
+				style="opacity: 1; display: block;">
+				<div class="owl-wrapper-outer">
+					<div class="owl-wrapper"
+						style="width: 4488px; left: 0px; display: block; transition: all; transform: translate3d(0px, 0px, 0px);">
+						<div class="owl-item active" style="width: 187px;">
+							<a href="shop-product-list.html"><img
+								src="../testmaven/assets/frontend/pages/img/brands/canon.jpg"
+								alt="canon" title="canon"></a>
+						</div>
+						<div class="owl-item active" style="width: 187px;">
+							<a href="shop-product-list.html"><img
+								src="../testmaven/assets/frontend/pages/img/brands/esprit.jpg"
+								alt="esprit" title="esprit"></a>
+						</div>
+						<div class="owl-item active" style="width: 187px;">
+							<a href="shop-product-list.html"><img
+								src="../testmaven/assets/frontend/pages/img/brands/gap.jpg" alt="gap"
+								title="gap"></a>
+						</div>
+						<div class="owl-item" style="width: 187px;">
+							<a href="shop-product-list.html"><img
+								src="../testmaven/assets/frontend/pages/img/brands/next.jpg" alt="next"
+								title="next"></a>
+						</div>
+						<div class="owl-item" style="width: 187px;">
+							<a href="shop-product-list.html"><img
+								src="../testmaven/assets/frontend/pages/img/brands/puma.jpg" alt="puma"
+								title="puma"></a>
+						</div>
+						<div class="owl-item" style="width: 187px;">
+							<a href="shop-product-list.html"><img
+								src="../testmaven/assets/frontend/pages/img/brands/zara.jpg" alt="zara"
+								title="zara"></a>
+						</div>
+						<div class="owl-item" style="width: 187px;">
+							<a href="shop-product-list.html"><img
+								src="../testmaven/assets/frontend/pages/img/brands/canon.jpg"
+								alt="canon" title="canon"></a>
+						</div>
+						<div class="owl-item" style="width: 187px;">
+							<a href="shop-product-list.html"><img
+								src="../testmaven/assets/frontend/pages/img/brands/esprit.jpg"
+								alt="esprit" title="esprit"></a>
+						</div>
+						<div class="owl-item" style="width: 187px;">
+							<a href="shop-product-list.html"><img
+								src="../testmaven/assets/frontend/pages/img/brands/gap.jpg" alt="gap"
+								title="gap"></a>
+						</div>
+						<div class="owl-item" style="width: 187px;">
+							<a href="shop-product-list.html"><img
+								src="../testmaven/assets/frontend/pages/img/brands/next.jpg" alt="next"
+								title="next"></a>
+						</div>
+						<div class="owl-item" style="width: 187px;">
+							<a href="shop-product-list.html"><img
+								src="../testmaven/assets/frontend/pages/img/brands/puma.jpg" alt="puma"
+								title="puma"></a>
+						</div>
+						<div class="owl-item" style="width: 187px;">
+							<a href="shop-product-list.html"><img
+								src="../testmaven/assets/frontend/pages/img/brands/zara.jpg" alt="zara"
+								title="zara"></a>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+				<div class="owl-controls clickable">
+					<div class="owl-buttons">
+						<div class="owl-prev">prev</div>
+						<div class="owl-next">next</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END BRANDS -->
+
+	<!-- BEGIN STEPS -->
+	<div class="steps-block steps-block-red">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 steps-block-col">
+					<i class="fa fa-truck"></i>
+					<div>
+						<h2>Free shipping</h2>
+						<em>Express delivery withing 3 days</em>
+					</div>
+					<span>&nbsp;</span>
+				</div>
+				<div class="col-md-4 steps-block-col">
+					<i class="fa fa-gift"></i>
+					<div>
+						<h2>Daily Gifts</h2>
+						<em>3 Gifts daily for lucky customers</em>
+					</div>
+					<span>&nbsp;</span>
+				</div>
+				<div class="col-md-4 steps-block-col">
+					<i class="fa fa-phone"></i>
+					<div>
+						<h2>477 505 8877</h2>
+						<em>24/7 customer care available</em>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END STEPS -->
+
+	<!-- BEGIN PRE-FOOTER -->
+	<div class="pre-footer">
+		<div class="container">
+			<div class="row">
+				<!-- BEGIN BOTTOM ABOUT BLOCK -->
+				<div class="col-md-3 col-sm-6 pre-footer-col">
+					<h2>About us</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+						sed diam sit nonummy nibh euismod tincidunt ut laoreet dolore
+						magna aliquarm erat sit volutpat. Nostrud exerci tation
+						ullamcorper suscipit lobortis nisl aliquip commodo consequat.</p>
+					<p>Duis autem vel eum iriure dolor vulputate velit esse
+						molestie at dolore.</p>
+				</div>
+				<!-- END BOTTOM ABOUT BLOCK -->
+				<!-- BEGIN BOTTOM INFO BLOCK -->
+				<div class="col-md-3 col-sm-6 pre-footer-col">
+					<h2>Information</h2>
+					<ul class="list-unstyled">
+						<li><i class="fa fa-angle-right"></i> <a href="#">Delivery
+								Information</a></li>
+						<li><i class="fa fa-angle-right"></i> <a href="#">Customer
+								Service</a></li>
+						<li><i class="fa fa-angle-right"></i> <a href="#">Order
+								Tracking</a></li>
+						<li><i class="fa fa-angle-right"></i> <a href="#">Shipping
+								&amp; Returns</a></li>
+						<li><i class="fa fa-angle-right"></i> <a href="contacts.html">Contact
+								Us</a></li>
+						<li><i class="fa fa-angle-right"></i> <a href="#">Careers</a></li>
+						<li><i class="fa fa-angle-right"></i> <a href="#">Payment
+								Methods</a></li>
+					</ul>
+				</div>
+				<!-- END INFO BLOCK -->
+
+				<!-- BEGIN TWITTER BLOCK -->
+				<div class="col-md-3 col-sm-6 pre-footer-col">
+					<h2 class="margin-bottom-0">Latest Tweets</h2>
+					<a class="twitter-timeline" href="https://twitter.com/twitterapi"
+						data-tweet-limit="2" data-theme="dark" data-link-color="#57C8EB"
+						data-widget-id="455411516829736961"
+						data-chrome="noheader nofooter noscrollbar noborders transparent"
+						data-twitter-extracted-i1726943902027345875="true">Loading
+						tweets by @keenthemes...</a>
+				</div>
+				<!-- END TWITTER BLOCK -->
+
+				<!-- BEGIN BOTTOM CONTACTS -->
+				<div class="col-md-3 col-sm-6 pre-footer-col">
+					<h2>Our Contacts</h2>
+					<address class="margin-bottom-40">
+						35, Lorem Lis Street, Park Ave<br> California, US<br>
+						Phone: 300 323 3456<br> Fax: 300 323 1456<br> Email: <a
+							href="mailto:info@metronic.com">info@metronic.com</a><br>
+						Skype: <a href="skype:metronic">metronic</a>
+					</address>
+				</div>
+				<!-- END BOTTOM CONTACTS -->
+			</div>
+			<hr>
+			<div class="row">
+				<!-- BEGIN SOCIAL ICONS -->
+				<div class="col-md-6 col-sm-6">
+					<ul class="social-icons">
+						<li><a class="rss" data-original-title="rss" href="#"></a></li>
+						<li><a class="facebook" data-original-title="facebook"
+							href="#"></a></li>
+						<li><a class="twitter" data-original-title="twitter" href="#"></a></li>
+						<li><a class="googleplus" data-original-title="googleplus"
+							href="#"></a></li>
+						<li><a class="linkedin" data-original-title="linkedin"
+							href="#"></a></li>
+						<li><a class="youtube" data-original-title="youtube" href="#"></a></li>
+						<li><a class="vimeo" data-original-title="vimeo" href="#"></a></li>
+						<li><a class="skype" data-original-title="skype" href="#"></a></li>
+					</ul>
+				</div>
+				<!-- END SOCIAL ICONS -->
+				<!-- BEGIN NEWLETTER -->
+				<div class="col-md-6 col-sm-6">
+					<div class="pre-footer-subscribe-box pull-right">
+						<h2>Newsletter</h2>
+						<form action="#">
+							<div class="input-group">
+								<input type="text" placeholder="youremail@mail.com"
+									class="form-control"> <span class="input-group-btn">
+									<button class="btn btn-primary" type="submit">Subscribe</button>
+								</span>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- END NEWLETTER -->
+			</div>
+		</div>
+	</div>
+	<!-- END PRE-FOOTER -->
+
+	<!-- BEGIN FOOTER -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<!-- BEGIN COPYRIGHT -->
+				<div class="col-md-6 col-sm-6 padding-top-10">2014 © Metronic
+					Shop UI. ALL Rights Reserved.</div>
+				<!-- END COPYRIGHT -->
+				<!-- BEGIN PAYMENTS -->
+				<div class="col-md-6 col-sm-6">
+					<ul class="list-unstyled list-inline pull-right">
+						<li><img
+							src="../testmaven/assets/frontend/layout/img/payments/western-union.jpg"
+							alt="We accept Western Union" title="We accept Western Union"></li>
+						<li><img
+							src="../testmaven/assets/frontend/layout/img/payments/american-express.jpg"
+							alt="We accept American Express"
+							title="We accept American Express"></li>
+						<li><img
+							src="../testmaven/assets/frontend/layout/img/payments/MasterCard.jpg"
+							alt="We accept MasterCard" title="We accept MasterCard"></li>
+						<li><img
+							src="../testmaven/assets/frontend/layout/img/payments/PayPal.jpg"
+							alt="We accept PayPal" title="We accept PayPal"></li>
+						<li><img
+							src="../testmaven/assets/frontend/layout/img/payments/visa.jpg"
+							alt="We accept Visa" title="We accept Visa"></li>
+					</ul>
+				</div>
+				<!-- END PAYMENTS -->
+			</div>
+		</div>
+	</div>
+	<!-- END FOOTER -->
+
+	<!-- BEGIN fast view of a product -->
+	<div id="product-pop-up" style="display: none; width: 700px;">
+		<div class="product-page product-pop-up">
+			<div class="row">
+				<div class="col-md-6 col-sm-6 col-xs-3">
+					<div class="product-main-image"
+						style="position: relative; overflow: hidden;">
+						<img src="../testmaven/assets/frontend/pages/img/products/model7.jpg"
+							alt="Cool green dress with red bell" class="img-responsive">
+						<img src="../testmaven/assets/frontend/pages/img/products/model7.jpg"
+							class="zoomImg"
+							style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 600px; height: 800px; border: none; max-width: none;">
+					</div>
+					<div class="product-other-images">
+						<a href="#" class="active"><img alt="Berry Lace Dress"
+							src="../testmaven/assets/frontend/pages/img/products/model3.jpg"></a>
+						<a href="#"><img alt="Berry Lace Dress"
+							src="../testmaven/assets/frontend/pages/img/products/model4.jpg"></a>
+						<a href="#"><img alt="Berry Lace Dress"
+							src="../testmaven/assets/frontend/pages/img/products/model5.jpg"></a>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-9">
+					<h2>Cool green dress with red bell</h2>
+					<div class="price-availability-block clearfix">
+						<div class="price">
+							<strong><span>$</span>47.00</strong> <em>$<span>62.00</span></em>
+						</div>
+						<div class="availability">
+							Availability: <strong>In Stock</strong>
+						</div>
+					</div>
+					<div class="description">
+						<p>Lorem ipsum dolor ut sit ame dolore adipiscing elit, sed
+							nonumy nibh sed euismod laoreet dolore magna aliquarm erat
+							volutpat Nostrud duis molestie at dolore.</p>
+					</div>
+					<div class="product-page-options">
+						<div class="pull-left">
+							<label class="control-label">Size:</label> <select
+								class="form-control input-sm">
+								<option>L</option>
+								<option>M</option>
+								<option>XL</option>
+							</select>
+						</div>
+						<div class="pull-left">
+							<label class="control-label">Color:</label> <select
+								class="form-control input-sm">
+								<option>Red</option>
+								<option>Blue</option>
+								<option>Black</option>
+							</select>
+						</div>
+					</div>
+					<div class="product-page-cart">
+						<div class="product-quantity">
+							<div class="input-group bootstrap-touchspin input-group-sm">
+								<span class="input-group-btn"><button
+										class="btn quantity-down bootstrap-touchspin-down"
+										type="button">
+										<i class="fa fa-angle-down"></i>
+									</button></span><span class="input-group-addon bootstrap-touchspin-prefix"
+									style="display: none;"></span><input id="product-quantity"
+									type="text" value="1" readonly="" name="product-quantity"
+									class="form-control input-sm" style="display: block;"><span
+									class="input-group-addon bootstrap-touchspin-postfix"
+									style="display: none;"></span><span class="input-group-btn"><button
+										class="btn quantity-up bootstrap-touchspin-up" type="button">
+										<i class="fa fa-angle-up"></i>
+									</button></span>
+							</div>
+						</div>
+						<button class="btn btn-primary" type="submit">Add to cart</button>
+						<a href="shop-item.html" class="btn btn-default">More details</a>
+					</div>
+				</div>
+
+				<div class="sticker sticker-sale"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END fast view of a product -->
+
+	<!-- Load javascripts at bottom, this will reduce page load time -->
+	<!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+	<!--[if lt IE 9]>
+    <script src="../testmaven/assets/global/plugins/respond.min.js"></script>  
+    <![endif]-->
+	<script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
+	<script src="../testmaven/assets/global/plugins/jquery.min.js"
+		type="text/javascript"></script>
+	<script src="../testmaven/assets/global/plugins/jquery-migrate.min.js"
+		type="text/javascript"></script>
+	<script src="../testmaven/assets/global/plugins/bootstrap/js/bootstrap.min.js"
+		type="text/javascript"></script>
+	<script src="../testmaven/assets/frontend/layout/scripts/back-to-top.js"
+		type="text/javascript"></script>
+	<script
+		src="../testmaven/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js"
+		type="text/javascript"></script>
+	<!-- END CORE PLUGINS -->
+
+	<!-- BEGIN PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
+	<script
+		src="../testmaven/assets/global/plugins/fancybox/source/jquery.fancybox.pack.js"
+		type="text/javascript"></script>
+	<!-- pop up -->
+	<script
+		src="../testmaven/assets/global/plugins/carousel-owl-carousel/owl-carousel/owl.carousel.min.js"
+		type="text/javascript"></script>
+	<!-- slider for products -->
+	<script src="../testmaven/assets/global/plugins/zoom/jquery.zoom.min.js"
+		type="text/javascript"></script>
+	<!-- product zoom -->
+	<script
+		src="../testmaven/assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.js"
+		type="text/javascript"></script>
+	<!-- Quantity -->
+
+	<!-- BEGIN LayerSlider -->
+	<script
+		src="../testmaven/assets/global/plugins/slider-layer-slider/js/greensock.js"
+		type="text/javascript"></script>
+	<!-- External libraries: GreenSock -->
+	<script
+		src="../testmaven/assets/global/plugins/slider-layer-slider/js/layerslider.transitions.js"
+		type="text/javascript"></script>
+	<!-- LayerSlider script files -->
+	<script
+		src="../testmaven/assets/global/plugins/slider-layer-slider/js/layerslider.kreaturamedia.jquery.js"
+		type="text/javascript"></script>
+	<!-- LayerSlider script files -->
+	<script src="../testmaven/assets/frontend/pages/scripts/layerslider-init.js"
+		type="text/javascript"></script>
+	<!-- END LayerSlider -->
+
+	<script src="../testmaven/assets/frontend/layout/scripts/layout.js"
+		type="text/javascript"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			Layout.init();
+			Layout.initOWL();
+			LayersliderInit.initLayerSlider();
+			Layout.initImageZoom();
+			Layout.initTouchspin();
+			Layout.initTwitter();
+		});
+	</script>
+	<!-- END PAGE LEVEL JAVASCRIPTS -->
+
+
+	<div id="topcontrol" title="Scroll Back to Top"
+		style="position: fixed; bottom: 10px; right: 10px; opacity: 0; cursor: pointer;">
+		<img src="../testmaven/assets/frontend/layout/img/up.png"
+			style="width: 40px; height: 40px">
+	</div>
+	<iframe id="rufous-sandbox" scrolling="no" frameborder="0"
+		allowtransparency="true" allowfullscreen="true"
+		style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;"
+		title="Twitter analytics iframe"></iframe>
+</body>
+<!-- END BODY -->
+</html>
+

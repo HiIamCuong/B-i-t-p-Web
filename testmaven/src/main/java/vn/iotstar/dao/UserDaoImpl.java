@@ -133,12 +133,74 @@ public class UserDaoImpl implements UserDao{
 			ps=conn.prepareStatement(query);
 			ps.setString(1, password);
 			ps.setString(2, username);
+			ps.executeUpdate();
 			rs=ps.executeQuery();
+			ps.close();
+			conn.close();
 		}
 		catch(Exception e)
 		{
 			e.printStackTrace();
 		}
+	}
+	@Override
+	public void updatefullname(String username, String fullname) {
+		String query="UPDATE nguoidung SET fullname = ? WHERE username = ?";
+		try
+		{
+			conn=new DBconnectSQL().getConnection();
+			ps=conn.prepareStatement(query);
+			ps.setString(1, fullname);
+			ps.setString(2, username);
+			ps.executeUpdate();
+			rs=ps.executeQuery();
+			System.out.print(fullname);
+			ps.close();
+			conn.close();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	@Override
+	public void updatephone(String username, String phone) {
+		String query="UPDATE nguoidung SET phone = ? WHERE username = ?";
+		try
+		{
+			conn=new DBconnectSQL().getConnection();
+			ps=conn.prepareStatement(query);
+			ps.setString(1, phone);
+			ps.setString(2, username);
+			ps.executeUpdate();
+			rs=ps.executeQuery();
+			ps.close();
+			conn.close();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+	@Override
+	public void updateavatar(String username, String avatar) {
+		String query="UPDATE nguoidung SET avatar = ? WHERE username = ?";
+		try
+		{
+			conn=new DBconnectSQL().getConnection();
+			ps=conn.prepareStatement(query);
+			ps.setString(1, "/testmaven/views/img/"+avatar);
+			ps.setString(2, username);
+			ps.executeUpdate();
+			rs=ps.executeQuery();
+			ps.close();
+			conn.close();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
 	}
 	
 }

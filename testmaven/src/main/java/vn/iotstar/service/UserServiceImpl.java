@@ -44,7 +44,7 @@ public class UserServiceImpl implements UserService {
 		}
 		long millis = System.currentTimeMillis();
 		java.sql.Date date = new java.sql.Date(millis);
-		userDAO.insert(new User(0,email, username, fullname, password, null, 1, phone, date));
+		userDAO.insert(new User(0,email, username, fullname, password, "/testmaven/views/img/default.png", 1, phone, date));
 		return true;
 
 	}
@@ -76,5 +76,18 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public void modified(String username, String password) {
 		userDAO.modified(username, password);
+	}
+	@Override
+	public void updatefullname(String username, String fullname) {
+		userDAO.updatefullname(username, fullname);
+	}
+	@Override
+	public void updatephone(String username, String phone) {
+		userDAO.updatephone(username, phone);
+	}
+	@Override
+	public void updateavatar(String username, String avatar) {
+		userDAO.updateavatar(username, avatar);
+		
 	}
 }

@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="jakarta.tags.core"%>
+<%@ page language="java" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="path/to/your/styles.css">
+</head>
+<body>
+    <h1>Index Page</h1>
+    
+    <p>
+        <%
+        String message = "Welcome to the Index Page!";
+        out.println(message);
+        %>
+    </p>
+
+    <script src="/template-v3.6/theme/templates/frontend/shop-index.html"></script>
+</body>
+</html>
+

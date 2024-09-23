@@ -76,7 +76,7 @@ public class LoginController extends HttpServlet{
 			{
 				saveRememberMe(resp,username);
 			}
-			resp.sendRedirect(req.getContextPath()+"/waiting");
+			req.getRequestDispatcher("/waiting").forward(req, resp);
 		}
 		else
 		{
