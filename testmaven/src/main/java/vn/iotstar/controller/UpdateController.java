@@ -96,7 +96,7 @@ public class UpdateController extends HttpServlet {
 			req.setAttribute("alert", "Có lỗi xảy ra" + fne.getMessage());
 		}
 		
-		req.getRequestDispatcher("/views/update.jsp").forward(req, resp);
+		resp.sendRedirect(req.getContextPath() +"/update");
 	}
 
 }
