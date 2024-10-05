@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="jakarta.tags.core"%>
+<c:url value="/" var="URL"></c:url>
 <head>
 <meta charset="utf-8">
 <title>Metronic Shop UI</title>

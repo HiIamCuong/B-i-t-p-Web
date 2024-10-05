@@ -1,0 +1,5 @@
+package vn.iotstar.controller.admin;
+
+public class CategoryController {
+
+}

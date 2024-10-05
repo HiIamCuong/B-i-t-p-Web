@@ -1,0 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<form action="${pageContext.request.contextPath}/admin/category/insert" method="post">
+  <label for="fname">Category name:</label><br>
+  <input type="text" id="categoryname" name="categoryname" value="John"><br>
+  <label for="lname">Images:</label><br>
+  <input type="text" id="images" name="Images" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
