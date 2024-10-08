@@ -43,11 +43,13 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="vn.iotstar"/>
 			<item value="test.com"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="jpact4"/>
 			<item value="testmaven"/>
 		</list>
 		<list key="projectNameTemplate">
