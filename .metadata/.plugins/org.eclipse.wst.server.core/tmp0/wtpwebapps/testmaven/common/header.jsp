@@ -126,8 +126,10 @@
 								<li><a href="${pageContext.request.contextPath }/register">Register</a></li>
 							</c:when>
 							<c:otherwise>
-								<li><img src="${sessionScope.account.avatar}"
-									style="width: 100px; height: 70px;"></li>
+								<li><c:url value="/image?fname=${sessionScope.account.avatar}"
+										var="imgUrl"></c:url></li>
+								<img height="100" width="100" src="${imgUrl}" id="imagesuser"
+									name="imagesuser" />
 								<li><a href="${pageContext.request.contextPath}/update">${sessionScope.account.fullname}</a></li>
 								<a href="${pageContext.request.contextPath }/logout">Đăng
 									Xuất</a>

@@ -17,23 +17,25 @@
 		<section>
 			<label class="input login-input">
 				<div class="input-group">
-					<span class="input-group-addon"><i class="fa fa-user"></i></span> 
+					<span class="input-group-addon"><i class="fa fa-user"></i></span>
 					<h3>
-						<img src="${sessionScope.account.avatar}" style="width: 100px; height: 70px;">
-						Tài khoản: ${sessionScope.account.username}
 					</h3>
-					<input type="hidden" name="username" value="${sessionScope.account.username}" />
-					<br>
-					<input
+					<input type="hidden" name="username"
+						value="${sessionScope.account.username}" /> <br> <input
 						type="text" placeholder="Họ tên" name="fullname"
-						class="form-control"> 
-					<br> 
-					<input type="text"
-						placeholder="Số điện thoại" name="phone" class="form-control">
-					<br> 
-					Chọn file: <input type="file" name="avatar" />
-					<br> 
-				 	<input
+						class="form-control" value="${user.fullname}"> <br> <input
+						type="text" placeholder="Số điện thoại" name="phone"
+						class="form-control" value="${user.phone}"> <br> Chọn
+					file: 
+					<c:choose>
+						<c:when test="${user.avatar.substring(0,5)=='https'}">
+							<c:url value="${user.avatar}" var="imgUrl"></c:url>
+						</c:when>
+						<c:otherwise>
+							<c:url value="/image?fname=${user.avatar}" var="imgUrl"></c:url>
+						</c:otherwise>
+					</c:choose><img height="150" width="200" src="${imgUrl}" id="imagesweb" />
+					<input type="file" name="avatar" onchange="choosefile(this)" id="imagesweb"/> <input
 						type="Submit" value="Submit" />
 				</div>
 			</label>

@@ -29,7 +29,7 @@
 					<c:url value="${cate.images}" var="imgUrl"></c:url>
 				</c:when>
 				<c:otherwise>
-					<c:url value="/views/img/${cate.images}" var="imgUrl"></c:url>
+					<c:url value="/image?fname=${cate.images}" var="imgUrl"></c:url>
 				</c:otherwise>
 			</c:choose>
 			<td><img height="150" width="200" src="${imgUrl}" /></td>

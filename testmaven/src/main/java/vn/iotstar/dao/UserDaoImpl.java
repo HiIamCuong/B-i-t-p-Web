@@ -154,7 +154,6 @@ public class UserDaoImpl implements UserDao{
 			ps.setString(2, username);
 			ps.executeUpdate();
 			rs=ps.executeQuery();
-			System.out.print(fullname);
 			ps.close();
 			conn.close();
 		}
@@ -189,7 +188,7 @@ public class UserDaoImpl implements UserDao{
 		{
 			conn=new DBconnectSQL().getConnection();
 			ps=conn.prepareStatement(query);
-			ps.setString(1, "/testmaven/views/img/"+avatar);
+			ps.setString(1, avatar);
 			ps.setString(2, username);
 			ps.executeUpdate();
 			rs=ps.executeQuery();

@@ -44,12 +44,12 @@ public class WaitingController extends HttpServlet {
 			}
 			else 
 			{
-				resp.sendRedirect(req.getContextPath()+"/Home2.jsp");
+				resp.sendRedirect(req.getContextPath()+"/admin/home");
 			}
 		}
 		else 
 		{
-			resp.sendRedirect(req.getContextPath()+"/Home2.jsp");
+			resp.sendRedirect(req.getContextPath()+"/admin/home");
 		}
 	}
 
